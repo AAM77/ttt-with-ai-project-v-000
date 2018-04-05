@@ -114,6 +114,7 @@ module Players
         if board.valid_move?(position)
           position
         end # if valid_move?
+      end # if index is nil
     end # prevent_defeat
 
 
