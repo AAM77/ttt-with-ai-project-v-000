@@ -101,6 +101,7 @@ module Players
     end # prevent_loss
 
     def prevent_defeat(board)
+      potential_combos(board, opponent_token)
 
 
     def check_middle(board)
