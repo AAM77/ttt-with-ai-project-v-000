@@ -93,7 +93,8 @@ class Game
 
   end # turn
 
-
+  ## plays a full game of tic-tac-toe until over
+  ## announces winners at the end
   def play
 
     until over?
