@@ -128,7 +128,7 @@ class TicTacToe_CLI
   end # one_player
 
 
-  ## Two human players vs. one another
+  ## Two human players play against one another
   def two_players
 
     if go_first? == true
