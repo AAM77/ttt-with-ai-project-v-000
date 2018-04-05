@@ -87,7 +87,7 @@ module Players
 
 
     def go_for_victory(board)
-      position = potential_combos(board, self.token)
+      position = potential_combos(board, self.token) + 1
       if valid_move?(position)
         position + 1
       end # if valid_move?
