@@ -1,4 +1,3 @@
-## DELETE THE COMMENTS AT THE BOTTOM
 require 'pry'
 
 module Players
