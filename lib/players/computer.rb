@@ -5,7 +5,8 @@ module Players
 
   class Computer < Player
 
-    @positions = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    ## Figure out how to choose at random
+    ##@positions = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
     def move(board)
 
