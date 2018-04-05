@@ -115,7 +115,7 @@ module Players
 
 
     def check_middle(board)
-      if !board.taken?("5")
+      if board.valid_move?("5")
         "5"
       end # if middle_taken
     end # check_middle
