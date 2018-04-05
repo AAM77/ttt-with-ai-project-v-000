@@ -71,19 +71,31 @@ module Players
     ## I need to
 
 
-    def potential_combos(board, player_token)
+    def detect_winning_move(board, token_to_test)
+      winning_combo = []
+      i = 0
 
-      Game::WIN_COMBINATIONS.detect do |combination|
+      #if two of the three spaces for the winning combo matches, then you're one away from winning
+      Game::WIN_COMBINATIONS.each do |combo|
+        if winning_combo.empty?
+          i += 1 if board.cells[combo[0]] == token_to_test
+          i += 1 if board.cells[combo[1]] == token_to_test
+          i += 1 if board.cells[combo[2]] == token_to_test
+          if i == 2 && combo.any? { |combo_num| !board.taken?(combo_num + 1) } #make sure there's one space open, not O-O-X or X-X-O
+            winning_combo = combo
+          else
+            i = 0
+          end
+        end
+      end
 
-        if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]]
-          combination[2]
-        elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
-          combination[1]
-        elsif board.cells[combination[1]] == player_token && board.cells[combination[1]] == board.cells[combination[2]]
-          combination[0]
-        end # if combination index == token
-      end # WIN_COMBINATIONS.detect
-    end # potential_combos
+      if !winning_combo.empty?
+        final = winning_combo.detect { |combo_num| !board.taken?(combo_num + 1) } #+1 to adjust for user input offset
+        final + 1 #to adjust for user input offset
+      else
+        nil
+      end
+    end
 
 
     def go_for_victory(board)
