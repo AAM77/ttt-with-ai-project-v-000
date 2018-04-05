@@ -104,7 +104,7 @@ module Players
     end # opponent_token
 
     def prevent_defeat(board)
-      potential_combos(board, opponent_token)
+      position = potential_combos(board, opponent_token)
     end # prevent_defeat
 
 
