@@ -113,7 +113,7 @@ module Players
         elsif board.cells[combination[0]] == board.cells[combination[2]]
           board.cells[combination[1]].index + 1
         elsif board.cells[combination[1]] == board.cells[combination[2]]
-          @move = "1"
+          board.cells[combination[0]].index + 1
         end # if combination.index
       end # WIN_COMBINATIONS.detect
 
