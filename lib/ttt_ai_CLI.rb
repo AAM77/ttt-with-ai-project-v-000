@@ -122,18 +122,18 @@ class TicTacToe_CLI
   end # one_player
 
 
-    ## Two human players vs. one another
-    def two_players
+  ## Two human players vs. one another
+  def two_players
 
-      if go_first? == true
-        game = Game.new(Players::Human.new("X"), Players::Human.new("O"))
-        game.play
+    if go_first? == true
+      game = Game.new(Players::Human.new("X"), Players::Human.new("O"))
+      game.play
 
-      else
-        game = Game.new(Players::Human.new("O"), Players::Human.new("X"))
-        game.play
-      end # inner if
-    end # two_players
+    else
+      game = Game.new(Players::Human.new("O"), Players::Human.new("X"))
+      game.play
+    end # inner if
+  end # two_players
 
   end # class TicTacToe_CLI
 
