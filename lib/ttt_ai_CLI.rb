@@ -80,6 +80,7 @@ class TicTacToe_CLI
       when 'y', 'yes'
         true
       when 'n', 'no'
+        false
 
       if input == 'y' || input == 'yes'
         true
