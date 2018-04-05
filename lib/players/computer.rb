@@ -14,6 +14,7 @@ module Players
       position ||= check_all(board)
       position ||= check_middle(board)
       position ||= check_corners(board)
+      position ||= place_elsewhere(board)
       ## position ||= place_randomly
 
       position.to_s
