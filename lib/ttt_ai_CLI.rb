@@ -21,6 +21,8 @@ class TicTacToe_CLI
 
 
   ## presents the start_menu with options for 0 player mode, 1 player mode, and 2 player mode.
+  ## exits wi 'exit'
+  ## loops until a valid entry is entered
   def start_menu
 
     puts "                                                    "
