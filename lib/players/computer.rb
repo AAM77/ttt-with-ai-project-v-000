@@ -90,7 +90,7 @@ module Players
       index = potential_combos(board, self.token)
       binding.pry
       position = (index + 1).to_s
-      if valid_move?(position)
+      if board.valid_move?(position)
         position
       end # if valid_move?
     end # go_for_win
