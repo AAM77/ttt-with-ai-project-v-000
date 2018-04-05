@@ -104,11 +104,11 @@ module Players
     end # check_middle
 
 
-    def check_potential_wins (board)
+    def check_potential_wins (board, player_token)
 
       Game::WIN_COMBINATIONS.detect do |combination|
 
-        if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]] && 
+        if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]] &&
           @move = "3"
         elsif board.cells[combination[0]] == board.cells[combination[2]]
           @move = "2"
