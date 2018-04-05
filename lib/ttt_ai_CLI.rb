@@ -28,9 +28,9 @@ class TicTacToe_CLI
     puts "Choose how many players will be playing the game (0, 1, or 2):"
     puts "Type 'exit' to EXIT"
 
-    user_input = gets.strip
+    user_input = gets.strip.downcase
 
-      case user_input.downcase
+      case user_input
       when '0'
         zero_players
       when '1'
