@@ -10,6 +10,7 @@ module Players
     def move(board)
 
       position ||= go_for_victory(board)
+      binding.pry
       position ||= prevent_defeat(board)
       position ||= check_middle(board)
       position ||= check_corners(board)
@@ -77,7 +78,6 @@ module Players
 
         if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]]
           combination[2]
-          binding.pry
         elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
           combination[1]
         elsif board.cells[combination[1]] == player_token && board.cells[combination[1]] == board.cells[combination[2]]
@@ -94,7 +94,7 @@ module Players
         if board.valid_move?(position)
           position
         end # if valid_move?
-      end # if index is nil?
+      end # if index is nil
     end # go_for_victory
 
 
