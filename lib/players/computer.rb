@@ -86,8 +86,8 @@ module Players
           if !board.taken?(combination[0] + 1)
             combination[0] + 1
           end # if taken?
-        end
-      end
+        end # outer if
+      end # detect_winning_move
 
 =begin
       winning_combo = []
