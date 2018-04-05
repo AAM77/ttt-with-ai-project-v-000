@@ -104,7 +104,7 @@ module Players
     end # check_middle
 
 
-    def check_potential_wins (board, player_token)
+    def potential_combos (board, player_token)
 
       Game::WIN_COMBINATIONS.detect do |combination|
 
