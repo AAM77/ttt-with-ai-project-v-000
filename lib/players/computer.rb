@@ -78,6 +78,8 @@ module Players
         if board.cells[combination[0]] == token_to_test && board.cells[combination[1]] == token_to_test
           if !board.taken?(combination[2] + 1)
             (combination[2] + 1)
+          else
+            nil
           end # if taken?
         elsif board.cells[combination[0]] == token_to_test && board.cells[combination[2]] == token_to_test
           if !board.taken?(combination[1] + 1)
