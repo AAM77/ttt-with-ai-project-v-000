@@ -2,11 +2,12 @@ require 'pry'
 
 class TicTacToe_CLI
 
-
+  ## Initializes with a logo and the
   def initialize
     print_logo
     start
   end # initialize
+
 
   def print_logo
     puts "   ____________     ____________     ____________   "
