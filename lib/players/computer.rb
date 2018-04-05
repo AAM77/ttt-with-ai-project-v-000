@@ -77,6 +77,7 @@ module Players
 
         if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]]
           combination[2]
+          binding.pry
         elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
           combination[1]
         elsif board.cells[combination[1]] == player_token && board.cells[combination[1]] == board.cells[combination[2]]
@@ -102,7 +103,7 @@ module Players
         'X'
       end # if token == 'X' or 'O'
     end # opponent_token
-    
+
 
     def prevent_defeat(board)
       index = potential_combos(board, opponent_token)
