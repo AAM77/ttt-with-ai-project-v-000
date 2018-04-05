@@ -55,9 +55,9 @@ class TicTacToe_CLI
       puts "Type 'y' or 'yes' to play again."
       puts "OR"
       puts "Type 'n' or 'no' to exit"
-      play_again = gets.strip
+      play_again = gets.strip.downcase
 
-      case play_again.downcase
+      case play_again
       when 'y', 'yes'
         start
       when 'n', 'no'
