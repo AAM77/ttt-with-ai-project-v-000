@@ -204,8 +204,5 @@ module Players
 
     end # place_elsewhere
 
-
-
-
   end # class Computer
 end # module Players
