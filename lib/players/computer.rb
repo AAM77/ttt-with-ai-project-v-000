@@ -86,7 +86,6 @@ module Players
     end # potential_combos
 
 
-
     def go_for_victory(board)
       potential_combos(board, self.token)
     end # go_for_win
