@@ -123,6 +123,11 @@ module Players
     end # go_for_win
 
     def prevent_defeat(board)
+      if self.token == 'X'
+        opponent_token == 'O'
+      else
+        opponent_token == 'X'
+      end # if token value
 
 
     def check_corners(board)
