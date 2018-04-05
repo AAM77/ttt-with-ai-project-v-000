@@ -81,6 +81,7 @@ module Players
             position
           end # if taken?
         elsif board.cells[combination[0]] == token_to_test && board.cells[combination[2]] == token_to_test
+          position = (combination[1] + 1).to_s
           if !board.taken?(combination[1] + 1)
             combination[1] + 1
           end # if taken?
