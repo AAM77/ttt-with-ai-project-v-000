@@ -24,8 +24,8 @@ class Board
   end # reset!
 
 
-  def index(position)
-    cells[position.to_i - 1]
+  def position(input)
+    cells[input.to_i - 1]
   end # position
 
 
@@ -42,7 +42,11 @@ class Board
 
 
   def taken?(position)
-    index(position) == "X" || index(position) == "O" ? true : false
+    if position(position) == "X" || position(position) == "O"
+      true
+    else
+      false
+    end # if
   end # taken?
 
 
