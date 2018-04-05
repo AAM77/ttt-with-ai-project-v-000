@@ -63,7 +63,7 @@ class Game
   end # won?
 
 
-  ## determines if it is a draw or not
+  ## determines if the game ended in a draw
   def draw?
     true if board.full? && !won?
   end # draw?
