@@ -87,35 +87,6 @@ module Players
       end # do |combination|
     end # detect_winning_move
 
-=begin
-      winning_combo = []
-      i = 0
-
-      #if two of the three spaces for the winning combo matches, then you're one away from winning
-      Game::WIN_COMBINATIONS.each do |combo|
-        if winning_combo.empty?
-          i += 1 if board.cells[combo[0]] == player_token
-          i += 1 if board.cells[combo[1]] == player_token
-          i += 1 if board.cells[combo[2]] == player_token
-          if i == 2 && combo.any? { |combo_num| !board.taken?(combo_num + 1) } #make sure there's one space open, not O-O-X or X-X-O
-            winning_combo = combo
-          else
-            i = 0
-          end
-        end
-      end
-
-
-      if !winning_combo.empty?
-        final = winning_combo.detect { |combo_num| !board.taken?(combo_num + 1) } #+1 to adjust for user input offset
-        final + 1 #to adjust for user input offset
-      else
-        nil
-      end
-    end
-
-=end
-
 
     def go_for_victory(board)
       position = detect_winning_move(board, self.token)
