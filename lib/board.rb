@@ -40,7 +40,7 @@ class Board
     count
   end # turn_count
 
-
+  ## determines if the spot has been taken
   def taken?(user_input)
     position(user_input) == "X" || position(user_input) == "O" ? true : false
   end # taken?
