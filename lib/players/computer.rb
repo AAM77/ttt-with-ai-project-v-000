@@ -73,7 +73,7 @@ module Players
     ## I need to
 
 
-    def potential_combos(board, player_token)
+    def potential_combo(board, player_token)
 
       Game::WIN_COMBINATIONS.each do |combination|
         if board.cells[combination[0]] == player_token && board.cells[combination[1]] == player_token
@@ -87,11 +87,11 @@ module Players
 
         end # outer if
       end # do |combination|
-    end # detect_winning_move
+    end # potential_combo
 
 
     def go_for_victory(board)
-      position = detect_winning_move(board, self.token)
+      position = potential_combo(board, self.token)
       if !position.nil?
         if board.valid_move?(position.to_s)
           position
@@ -110,7 +110,7 @@ module Players
 
 
     def prevent_defeat(board)
-      position = detect_winning_move(board, opponent_token)
+      position = potential_combo(board, opponent_token)
       if !position.nil?
         if board.valid_move?(position.to_s)
           position
