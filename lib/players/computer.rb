@@ -131,6 +131,7 @@ module Players
       end # if
     end # check_corners
 
+=begin
     def check_all(board)
       if board.taken?("1") && board.taken?("2") && board.valid_move?("3")
         "3"
