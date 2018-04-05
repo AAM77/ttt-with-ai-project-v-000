@@ -52,7 +52,7 @@ class TicTacToe_CLI
     end # case start_menu
   end # start_menu
 
-  ## asks the user if he/she wants to play again
+  ## asks the human player if he/she wants to play again
   def play_again?
 
     play_again = ''
