@@ -75,7 +75,7 @@ class TicTacToe_CLI
 
   end # play_again method
 
-
+  ## asks the user if he/she wants to go_first
   def go_first?
 
     puts "Do you want to go first and be X?"
