@@ -42,7 +42,7 @@ class Board
 
 
   def taken?(position)
-    if index(position) == "X" || index(position) == "O"
+    index(position) == "X" || index(position) == "O" ? true : false
       true
     else
       false
