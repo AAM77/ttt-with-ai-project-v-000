@@ -52,7 +52,7 @@ class Board
 
   def valid_move?(user_input)
     index = user_input.to_i - 1
-    true if (0 <= index && index <= 8) && taken?(position) == false
+    true if (0 <= index && index <= 8) && taken?(user_input) == false
   end # valid_move?
 
 
