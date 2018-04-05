@@ -28,7 +28,7 @@ class Board
     cells[user_input.to_i - 1]
   end # position
 
-
+  ## determines if the board is ful
   def full?
     true if cells.all?{|pos| pos == "X" || pos == "O"}
   end # full?
