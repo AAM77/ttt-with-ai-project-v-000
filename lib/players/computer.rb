@@ -10,7 +10,8 @@ module Players
     def move(board)
 
       position ||= go_for_victory(board)
-      position ||= prevent_loss(board)
+      position ||= prevent_defear(board)
+      position ||= 
       position ||= check_corners(board)
       position ||= check_all(board)
 
