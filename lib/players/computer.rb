@@ -104,7 +104,7 @@ module Players
     end # check_middle
 
 
-    def potential_combos (board, player_token)
+    def potential_combos(board, player_token)
 
       Game::WIN_COMBINATIONS.detect do |combination|
 
@@ -112,12 +112,15 @@ module Players
           combination[2] + 1
         elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
           combination[1] + 1
-        elsif board.cells[combination[1]] == player_token && board.cells[combination[0]] == board.cells[combination[2]] 
+        elsif board.cells[combination[1]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
           [combination[0] + 1
-          
+
         end # if combination.index
       end # WIN_COMBINATIONS.detect
     end # potential_combos
+
+    def place_my_token(board)
+      potential_combos(board, self.token)
 
 
     def check_corners(board)
