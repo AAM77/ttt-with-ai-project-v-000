@@ -126,8 +126,9 @@ module Players
 
 
     def check_corners(board)
-      if board.taken?("1") && board.taken?("3") && board.valid_move?("2")
-        "2"
+      if board.taken?("1") && board.taken?("3")
+        if board.valid_move?("2")
+          "2"
       elsif board.taken?("1") && board.taken?("7") && board.valid_move?("4")
         "4"
       elsif board.taken?("3") && board.taken?("9") && board.valid_move?("6")
