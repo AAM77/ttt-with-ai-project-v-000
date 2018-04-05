@@ -45,7 +45,7 @@ class Board
     position(user_input) == "X" || position(user_input) == "O" ? true : false
   end # taken?
 
-
+  ## determines if the entered input is of the specified parameters
   def valid_move?(user_input)
     index = user_input.to_i - 1
     true if (0 <= index && index <= 8) && taken?(user_input) == false
