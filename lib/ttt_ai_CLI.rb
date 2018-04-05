@@ -49,26 +49,27 @@ class TicTacToe_CLI
   end # start
 
 
-    def play_again?
-      play_again = ''
-      puts ""
-      puts "Would you like to play again."
-      puts "Type 'y' or 'yes' to play again."
-      puts "OR"
-      puts "Type 'n' or 'no' to exit"
-      play_again = gets.strip.downcase
+  def play_again?
+    
+    play_again = ''
+    puts ""
+    puts "Would you like to play again."
+    puts "Type 'y' or 'yes' to play again."
+    puts "OR"
+    puts "Type 'n' or 'no' to exit"
+    play_again = gets.strip.downcase
 
-      case play_again
-      when 'y', 'yes'
-        start
-      when 'n', 'no'
-        abort("You Exited the Game")
-      else
-        puts "Invalid choice!"
-        play_again?
-      end # case play_again
+    case play_again
+    when 'y', 'yes'
+      start
+    when 'n', 'no'
+      abort("You Exited the Game")
+    else
+      puts "Invalid choice!"
+      play_again?
+    end # case play_again
 
-    end # play_again method
+  end # play_again method
 
     def go_first?
 
