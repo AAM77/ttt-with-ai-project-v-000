@@ -1,5 +1,6 @@
 ## This is not working right, but I need to work on something else.
 ## I will come back to this later on and get it to work the way it should
+## For some reason, it will not detect the winning combination
 
 
 require 'pry'
