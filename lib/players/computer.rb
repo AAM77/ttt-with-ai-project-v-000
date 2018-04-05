@@ -109,7 +109,7 @@ module Players
       Game::WIN_COMBINATIONS.detect do |combination|
 
         if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]] &&
-          @move = "3"
+          board.cells[combination[0]].index
         elsif board.cells[combination[0]] == board.cells[combination[2]]
           @move = "2"
         elsif board.cells[combination[1]] == board.cells[combination[2]]
