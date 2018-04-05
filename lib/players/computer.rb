@@ -74,8 +74,8 @@ module Players
     def detect_winning_move(board, token_to_test)
 
       Game::WIN_COMBINATIONS.each do |combination|
-        combination.detect do |index|
-          
+        if board.cells[combination[0]] == token_to_test && board.cells[combination[1]] == token_to_test
+
       winning_combo = []
       i = 0
 
