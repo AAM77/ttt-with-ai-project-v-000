@@ -23,7 +23,7 @@ class Board
     self.cells = Array.new(9, " ")
   end # reset!
 
-
+  ## determines the value in the input position
   def position(user_input)
     cells[user_input.to_i - 1]
   end # position
