@@ -128,7 +128,7 @@ module Players
 
     def go_for_victory(board)
       position = detect_winning_move(board, self.token)
-      if !index.nil?
+      if !position.nil?
         if board.valid_move?(position.to_s)
           position
         end # if valid_move?
