@@ -130,6 +130,7 @@ module Players
       end # if token == 'X' or 'O'
 
       potential_combos(board, opponent_token)
+    end # prevent_loss
 
 
     def check_corners(board)
