@@ -77,8 +77,8 @@ module Players
         binding.pry
         if board.cells[combination[0]] == token_to_test && board.cells[combination[1]] == token_to_test
           position = (combination[2] + 1).to_s
-          if !board.taken?(combination[2] + 1)
-            combination[2] + 1
+          if !board.taken?(position)
+            position
           end # if taken?
         elsif board.cells[combination[0]] == token_to_test && board.cells[combination[2]] == token_to_test
           if !board.taken?(combination[1] + 1)
