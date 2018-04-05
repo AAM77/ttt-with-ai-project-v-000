@@ -30,10 +30,6 @@ class Game
     @board = board
   end # initialize
 
-  ## calls
-  def self.board_cells
-
-
   def current_player
     if board.turn_count.even?
       player_1
