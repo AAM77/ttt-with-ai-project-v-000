@@ -4,6 +4,7 @@
 ## Need to add in a method that places at random
 ## Need to make it so that the computer results in cat's game each time.
 #### ---> Currently, the only way to do this has been to run only the 'check_middle' and 'place_elsewhere' methods
+
 ## I will come back to this later on and get it to work the way it should
 
 
