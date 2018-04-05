@@ -76,7 +76,7 @@ class Game
   end # winner
 
 
-  ## recursively call this function until it received a valid entry
+  ## recursively calls this function until it receives a valid entry
   def turn
     puts "Player #{current_player.token}'s turn!'"
     puts "\n"
