@@ -71,8 +71,9 @@ class Game
 
 
   def winner
-    if winning_combination = won?
-      board.cells[winning_combination.first] ## returns the first player token of the winning combination
+    ## returns the first player token of the winning combination
+    board.cells[winning_combination.first] if winning_combination = won?
+       
     end # if
   end # winner
 
