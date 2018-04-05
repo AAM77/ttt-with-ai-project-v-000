@@ -76,18 +76,16 @@ module Players
       Game::WIN_COMBINATIONS.each do |combination|
         binding.pry
         if board.cells[combination[0]] == token_to_test && board.cells[combination[1]] == token_to_test
-          position = (combination[2] + 1).to_s
-          if !board.taken?(position)
-            position
+          if !board.taken?(combination[2] + 1)
+            (combination[2] + 1)
           end # if taken?
         elsif board.cells[combination[0]] == token_to_test && board.cells[combination[2]] == token_to_test
-          position = (combination[1] + 1).to_s
-          if !board.taken?(position)
-            combination[1] + 1
+          if !board.taken?(combination[1] + 1)
+            (combination[1] + 1)
           end # if taken?
         elsif board.cells[combination[1]] == token_to_test && board.cells[combination[2]] == token_to_test
           if !board.taken?(combination[0] + 1)
-            combination[0] + 1
+            (combination[0] + 1)
           end # if taken?
         end # outer if
       end # do |combination|
