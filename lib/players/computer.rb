@@ -9,10 +9,10 @@ module Players
 
     def move(board)
 
-      position = go_for_victory(board) if position.nil?
-      position = prevent_defeat(board) if position.nil?
-      position = check_middle(board) if position.nil?
-      position = check_corners(board) if position.nil?
+      position ||= go_for_victory(board)
+      position ||= prevent_defeat(board)
+      position ||= check_middle(board)
+      position ||= check_corners(board)
 
       position.to_s
 
