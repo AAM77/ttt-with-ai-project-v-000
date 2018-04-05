@@ -88,8 +88,9 @@ module Players
 
 
     def go_for_victory(board)
-      index ||= potential_combos(board, self.token)
-      position ||= (index + 1).to_s
+      index = potential_combos(board, self.token)
+      if !indec.nil?
+      position = (index + 1).to_s
       if board.valid_move?(position)
         position
       end # if valid_move?
