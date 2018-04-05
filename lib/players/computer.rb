@@ -92,7 +92,7 @@ module Players
 
 
 
-    def opponent_token(board)
+    def opponent_token
       if self.token == 'X'
         'O'
       else
