@@ -100,6 +100,8 @@ module Players
       end # if token == 'X' or 'O'
     end # prevent_loss
 
+    def prevent_defeat(board)
+
 
     def check_middle(board)
       if !board.taken?("5")
