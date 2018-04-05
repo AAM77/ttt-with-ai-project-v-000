@@ -166,6 +166,8 @@ module Players
       end # if checking all
     end # check_all
 
+=end
+
 
 
 
