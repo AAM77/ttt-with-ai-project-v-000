@@ -24,8 +24,8 @@ class Board
   end # reset!
 
 
-  def index(input)
-    cells[input.to_i - 1]
+  def index(position)
+    cells[position.to_i - 1]
   end # position
 
 
