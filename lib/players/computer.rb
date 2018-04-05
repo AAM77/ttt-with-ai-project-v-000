@@ -146,7 +146,7 @@ module Players
 
 
     def prevent_defeat(board)
-      index = detect_winning_move(board, opponent_token)
+      position = detect_winning_move(board, opponent_token)
       if !index.nil?
         if board.valid_move?(position.to_s)
           position
