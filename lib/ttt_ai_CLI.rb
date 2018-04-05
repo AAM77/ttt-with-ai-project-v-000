@@ -85,14 +85,6 @@ class TicTacToe_CLI
         go_first?
       end
 
-      if input == 'y' || input == 'yes'
-        true
-      elsif input == 'n' || input == 'no'
-        false
-      else
-        go_first?
-      end # if input
-
     end # go_first
 
 
