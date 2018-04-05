@@ -120,7 +120,7 @@ module Players
 
     def go_for_win(board)
       potential_combos(board, self.token)
-    end # 
+    end # go_for_win
 
 
     def check_corners(board)
