@@ -124,7 +124,7 @@ module Players
 
     def place_my_token(board)
       potential_combos(board, self.token)
-    end # 
+    end #
 
 
     def check_corners(board)
