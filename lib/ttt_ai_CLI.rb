@@ -20,6 +20,7 @@ class TicTacToe_CLI
   end # intro_logo
 
 
+  ## presents the start_menu with options for 0 player mode, 1 player mode, and 2 player mode.
   def start_menu
 
     puts "                                                    "
