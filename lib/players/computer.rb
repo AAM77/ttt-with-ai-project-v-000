@@ -127,7 +127,9 @@ module Players
         opponent_token == 'O'
       else
         opponent_token == 'X'
-      end # if token value
+      end # if token == 'X' or 'O'
+
+      potential_combos(board, opponent_token)
 
 
     def check_corners(board)
