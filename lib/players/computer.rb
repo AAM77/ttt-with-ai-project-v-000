@@ -92,15 +92,12 @@ module Players
 
 
 
-    def determine_opponent_token(board)
+    def opponent_token(board)
       if self.token == 'X'
-        opponent_token == 'O'
-        potential_combos(board, opponent_token)
+        'O'
       else
-        opponent_token == 'X'
-        potential_combos(board, opponent_token)
+        'X'
       end # if token == 'X' or 'O'
-
     end # prevent_loss
 
 
