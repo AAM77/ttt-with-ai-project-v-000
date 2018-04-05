@@ -182,7 +182,7 @@ module Players
       end # if checking all
     end # check_all
 
-    def place_randomly
+    def place_randomly(board)
 
   end # class Computer
 end # module Players
