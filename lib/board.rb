@@ -18,7 +18,7 @@ class Board
 
   end # board
 
-
+  ## resets the array if necessary
   def reset!
     self.cells = Array.new(9, " ")
   end # reset!
