@@ -50,7 +50,7 @@ class TicTacToe_CLI
 
 
   def play_again?
-    
+
     play_again = ''
     puts ""
     puts "Would you like to play again."
@@ -71,23 +71,23 @@ class TicTacToe_CLI
 
   end # play_again method
 
-    def go_first?
+  def go_first?
 
-      puts "Do you want to go first and be X?"
-      puts "Type 'y' or 'yes' for YES"
-      puts "Type 'n' or 'no' for NO"
-      input = gets.strip.downcase
+    puts "Do you want to go first and be X?"
+    puts "Type 'y' or 'yes' for YES"
+    puts "Type 'n' or 'no' for NO"
+    input = gets.strip.downcase
 
-      case input
-      when 'y', 'yes'
-        true
-      when 'n', 'no'
-        false
-      else
-        go_first?
-      end
+    case input
+    when 'y', 'yes'
+      true
+    when 'n', 'no'
+      false
+    else
+      go_first?
+    end
 
-    end # go_first
+  end # go_first
 
 
     ## The computer plays itself
