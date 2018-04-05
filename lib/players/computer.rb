@@ -73,7 +73,7 @@ module Players
     ## I need to
 
 
-    def find_potential_combos(board, player_token)
+    def potential_combos(board, player_token)
 
       Game::WIN_COMBINATIONS.each do |combination|
         if board.cells[combination[0]] == player_token && board.cells[combination[1]] == player_token
