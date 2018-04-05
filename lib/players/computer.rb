@@ -100,8 +100,7 @@ module Players
         opponent_token == 'X'
         potential_combos(board, opponent_token)
       end # if token == 'X' or 'O'
-
-      
+    
     end # prevent_loss
 
 
