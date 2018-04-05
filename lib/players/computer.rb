@@ -118,9 +118,9 @@ module Players
       end # WIN_COMBINATIONS.detect
     end # potential_combos
 
-    def place_my_token(board)
+    def go_for_win(board)
       potential_combos(board, self.token)
-    end #
+    end # 
 
 
     def check_corners(board)
