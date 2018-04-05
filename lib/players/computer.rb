@@ -81,8 +81,7 @@ module Players
             nil
           end # if taken?
         elsif board.cells[combination[0]] == token_to_test && board.cells[combination[2]] == token_to_test
-          if !board.taken?(combination[1] + 1)
-            (combination[1] + 1)
+          if !board.taken?(combination[1] + 1) ? (combination[1] + 1) : nil
           else
             nil
           end # if taken?
