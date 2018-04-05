@@ -108,11 +108,14 @@ module Players
 
       Game::WIN_COMBINATIONS.detect do |combination|
 
-        if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]] &&
+        if board.cells[combination[0]] == player_token &&
+           board.cells[combination[0]] == board.cells[combination[1]] &&
           combination[2] + 1
-        elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
+        elsif board.cells[combination[0]] == player_token &&
+              board.cells[combination[0]] == board.cells[combination[2]]
           combination[1] + 1
-        elsif board.cells[combination[1]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
+        elsif board.cells[combination[1]] == player_token &&
+              board.cells[combination[0]] == board.cells[combination[2]]
           [combination[0] + 1
 
         end # if combination.index
@@ -121,6 +124,7 @@ module Players
 
     def place_my_token(board)
       potential_combos(board, self.token)
+    end # 
 
 
     def check_corners(board)
