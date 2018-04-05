@@ -48,7 +48,7 @@ class Game
 
 
 
-  ## determines if the winning combinations match
+  ## determines the the winning combination that matches
   def won?
 
     WIN_COMBINATIONS.detect do |combination|
