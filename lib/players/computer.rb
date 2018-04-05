@@ -95,7 +95,7 @@ module Players
           position
         end # if valid_move?
       end # if index is nil?
-      end # go_for_win
+    end # go_for_win
 
 
     def opponent_token
