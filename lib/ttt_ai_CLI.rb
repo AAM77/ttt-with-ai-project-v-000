@@ -30,22 +30,22 @@ class TicTacToe_CLI
 
     user_input = gets.strip.downcase
 
-      case user_input
-      when '0'
-        zero_players
-        play_again?
-      when '1'
-        one_player
-        play_again?
-      when '2'
-        two_players
-        play_again?
-      when 'exit'
-        abort("You Exited the Game")
-      else
-        puts "Invalid entry. The choices are 0, 1, 2, or exit!"
-        start
-      end # case start
+    case user_input
+    when '0'
+      zero_players
+      play_again?
+    when '1'
+      one_player
+      play_again?
+    when '2'
+      two_players
+      play_again?
+    when 'exit'
+      abort("You Exited the Game")
+    else
+      puts "Invalid entry. The choices are 0, 1, 2, or exit!"
+      start
+    end # case start
   end # start
 
 
