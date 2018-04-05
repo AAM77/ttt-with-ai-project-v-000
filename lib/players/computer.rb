@@ -116,7 +116,7 @@ module Players
           [combination[0] + 1
         end # if combination.index
       end # WIN_COMBINATIONS.detect
-    end # potential_win_loss_combinations
+    end # check_potential_wins
 
 
     def check_corners(board)
