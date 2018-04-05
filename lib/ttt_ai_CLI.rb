@@ -108,18 +108,18 @@ class TicTacToe_CLI
   end # zero_players
 
 
-    ## The player's opponent is a computer
-    def one_player
+  ## The player's opponent is a computer
+  def one_player
 
-      if go_first? == true
-        game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
-        game.play
+    if go_first? == true
+      game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+      game.play
 
-      else
-        game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
-        game.play
-      end # inner if
-    end # one_player
+    else
+      game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
+      game.play
+    end # inner if
+  end # one_player
 
 
     ## Two human players vs. one another
