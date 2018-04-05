@@ -96,7 +96,6 @@ module Players
     end # go_for_win
 
 
-
     def opponent_token
       if self.token == 'X'
         'O'
@@ -104,6 +103,7 @@ module Players
         'X'
       end # if token == 'X' or 'O'
     end # opponent_token
+    
 
     def prevent_defeat(board)
       index = potential_combos(board, opponent_token)
