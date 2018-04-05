@@ -20,7 +20,7 @@ class TicTacToe_CLI
   end # intro_logo
 
 
-  def start_menu_menu
+  def start_menu
 
     puts "                                                    "
     puts "               WELCOME TO TIC-TAC-TOE!              "
