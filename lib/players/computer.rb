@@ -74,7 +74,8 @@ module Players
     def detect_winning_move(board, token_to_test)
 
       Game::WIN_COMBINATIONS.each do |combination|
-        combination.detext do
+        combination.detect do |index|
+          
       winning_combo = []
       i = 0
 
