@@ -74,9 +74,9 @@ class TicTacToe_CLI
       puts "Do you want to go first and be X?"
       puts "Type 'y' or 'yes' for YES"
       puts "Type 'n' or 'no' for NO"
-      input = gets.strip.downcase
+      input = gets.strip
 
-      case input
+      case input.downcase
       when 'y', 'yes'
         true
       when 'n', 'no'
