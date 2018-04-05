@@ -86,6 +86,7 @@ module Players
           if !board.taken?(combination[2] + 1)
             combination[2] + 1
           end # if taken?
+        end
 
 
       winning_combo = []
