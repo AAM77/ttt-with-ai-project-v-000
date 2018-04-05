@@ -75,8 +75,8 @@ module Players
 
       Game::WIN_COMBINATIONS.each do |combination|
         if board.cells[combination[0]] == token_to_test && board.cells[combination[1]] == token_to_test
-          position = (combination[0] + 1).to_s
-          if !board.valid_move?()
+          if !board.taken?(combination[2])
+            
 
       winning_combo = []
       i = 0
