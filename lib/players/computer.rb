@@ -77,6 +77,7 @@ module Players
 
         if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]]
           if !board.taken?((combination[2] + 1).to_s)
+            combination[2] + 1
         elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
           if !board.taken?((combination[1] + 1).to_s)
         elsif board.cells[combination[1]] == player_token && board.cells[combination[1]] == board.cells[combination[2]]
