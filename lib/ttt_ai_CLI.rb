@@ -77,6 +77,7 @@ class TicTacToe_CLI
       input = gets.strip.downcase
 
       case input
+      when 'y', 'yes'
 
       if input == 'y' || input == 'yes'
         true
