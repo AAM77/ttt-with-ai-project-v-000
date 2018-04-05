@@ -56,9 +56,9 @@ class Board
   end # valid_move?
 
 
-  def update(position, player)
-    if valid_move?(position) == true
-      cells[position.to_i - 1] = player.token
+  def update(user_input, player)
+    if valid_move?(user_input) == true
+      cells[user_input.to_i - 1] = player.token
     end # if - valid_move?
   end # update
 
