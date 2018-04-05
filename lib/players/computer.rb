@@ -5,12 +5,13 @@ module Players
 
   class Computer < Player
 
+
+=begin
     @positions = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
     def move(board)
 
       position ||= go_for_victory(board)
-      binding.pry
       position ||= prevent_defeat(board)
       position ||= check_middle(board)
       position ||= check_corners(board)
@@ -147,6 +148,8 @@ module Players
 
   end # class Computer
 end # module Players
+
+=end
 
 =begin
     def check_all(board)
