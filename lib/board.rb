@@ -51,7 +51,7 @@ class Board
     true if (0 <= index && index <= 8) && taken?(user_input) == false
   end # valid_move?
 
-
+  ## updates the board by placing the user's token 
   def update(user_input, player)
     if valid_move?(user_input) == true
       cells[user_input.to_i - 1] = player.token
