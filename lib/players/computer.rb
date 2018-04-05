@@ -9,8 +9,8 @@ module Players
 
     def move(board)
 
-      position ||= potential_win_loss_combos(board)
-      position ||= check_middle(board)
+      position ||= go_for_victory(board)
+      position ||= prevent_loss(board)
       position ||= check_corners(board)
       position ||= check_all(board)
 
