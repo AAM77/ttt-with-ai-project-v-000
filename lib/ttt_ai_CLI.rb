@@ -135,7 +135,7 @@ class TicTacToe_CLI
     end # inner if
   end # two_players
 
-  end # class TicTacToe_CLI
+end # class TicTacToe_CLI
 
 
 =begin
