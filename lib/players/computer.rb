@@ -107,7 +107,7 @@ module Players
           end
         end
       end
-=end
+
 
       if !winning_combo.empty?
         final = winning_combo.detect { |combo_num| !board.taken?(combo_num + 1) } #+1 to adjust for user input offset
@@ -116,6 +116,8 @@ module Players
         nil
       end
     end
+
+=end
 
 
     def go_for_victory(board)
