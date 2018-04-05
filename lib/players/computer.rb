@@ -200,6 +200,7 @@ module Players
       elsif board.valid_move?("2")
         "2"
       end # valid_move?
+      
     end # place_elsewhere
 
 
