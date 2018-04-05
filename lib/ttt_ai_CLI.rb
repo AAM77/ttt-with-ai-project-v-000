@@ -83,6 +83,7 @@ class TicTacToe_CLI
         false
       else
         go_first?
+      end
 
       if input == 'y' || input == 'yes'
         true
