@@ -71,16 +71,16 @@ module Players
     ## I need to
 
 
-    def detect_winning_move(board, token_to_test)
+    def detect_winning_move(board, player_token)
 
       Game::WIN_COMBINATIONS.each do |combination|
-        if board.cells[combination[0]] == token_to_test && board.cells[combination[1]] == token_to_test
+        if board.cells[combination[0]] == player_token && board.cells[combination[1]] == player_token
           !board.taken?(combination[2] + 1) ? (combination[2] + 1) : nil
 
-        elsif board.cells[combination[0]] == token_to_test && board.cells[combination[2]] == token_to_test
+        elsif board.cells[combination[0]] == player_token && board.cells[combination[2]] == player_token
           !board.taken?(combination[1] + 1) ? (combination[1] + 1) : nil
 
-        elsif board.cells[combination[1]] == token_to_test && board.cells[combination[2]] == token_to_test
+        elsif board.cells[combination[1]] == player_token && board.cells[combination[2]] == player_token
           !board.taken?(combination[0] + 1) ? (combination[0] + 1) : nil
 
         end # outer if
@@ -94,9 +94,9 @@ module Players
       #if two of the three spaces for the winning combo matches, then you're one away from winning
       Game::WIN_COMBINATIONS.each do |combo|
         if winning_combo.empty?
-          i += 1 if board.cells[combo[0]] == token_to_test
-          i += 1 if board.cells[combo[1]] == token_to_test
-          i += 1 if board.cells[combo[2]] == token_to_test
+          i += 1 if board.cells[combo[0]] == player_token
+          i += 1 if board.cells[combo[1]] == player_token
+          i += 1 if board.cells[combo[2]] == player_token
           if i == 2 && combo.any? { |combo_num| !board.taken?(combo_num + 1) } #make sure there's one space open, not O-O-X or X-X-O
             winning_combo = combo
           else
@@ -282,16 +282,16 @@ end # module Players
     detect_winning_move(board, opponent_token)
   end
 
-  def detect_winning_move(board, token_to_test)
+  def detect_winning_move(board, player_token)
     winning_combo = []
     i = 0
 
     #if two of the three spaces for the winning combo matches, then you're one away from winning
     Game::WIN_COMBINATIONS.each do |combo|
       if winning_combo.empty?
-        i += 1 if board.cells[combo[0]] == token_to_test
-        i += 1 if board.cells[combo[1]] == token_to_test
-        i += 1 if board.cells[combo[2]] == token_to_test
+        i += 1 if board.cells[combo[0]] == player_token
+        i += 1 if board.cells[combo[1]] == player_token
+        i += 1 if board.cells[combo[2]] == player_token
         if i == 2 && combo.any? { |combo_num| !board.taken?(combo_num + 1) } #make sure there's one space open, not O-O-X or X-X-O
           winning_combo = combo
         else
