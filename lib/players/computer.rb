@@ -86,6 +86,7 @@ module Players
         elsif board.cells[combination[1]] == player_token && board.cells[combination[1]] == board.cells[combination[2]]
           if !board.taken?((combination[0] + 1).to_s)
             combination[2] + 1
+          end # if taken?
         end # if combination index == token
       end # WIN_COMBINATIONS.detect
     end # potential_combos
