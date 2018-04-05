@@ -87,6 +87,7 @@ module Players
             combination[0] + 1
           end # if taken?
         end
+      end
 
 =begin
       winning_combo = []
