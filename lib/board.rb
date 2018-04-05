@@ -28,12 +28,12 @@ class Board
     cells[user_input.to_i - 1]
   end # position
 
-  ## determines if the board is ful
+  ## determines if the board is full
   def full?
     true if cells.all?{|pos| pos == "X" || pos == "O"}
   end # full?
 
-
+  ## determines what turn it is now
   def turn_count
     count = 0
     cells.each {|pos| count += 1 if pos == "X" || pos == "O"}
