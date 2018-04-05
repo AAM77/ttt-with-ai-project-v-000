@@ -131,6 +131,11 @@ module Players
       end # if
     end # check_corners
 
+  end # class Computer
+
+
+end # module Players
+
 =begin
     def check_all(board)
       if board.taken?("1") && board.taken?("2") && board.valid_move?("3")
@@ -167,14 +172,6 @@ module Players
     end # check_all
 
 =end
-
-
-
-
-  end # class Computer
-
-
-end # module Players
 
 
 
