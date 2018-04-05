@@ -48,7 +48,7 @@ class Game
 
 
 
-
+  ## determines if the winning combinations match
   def won?
 
     WIN_COMBINATIONS.detect do |combination|
@@ -67,6 +67,7 @@ class Game
   def draw?
     true if board.full? && !won?
   end # draw?
+
 
   ## determines the winner
   def winner
