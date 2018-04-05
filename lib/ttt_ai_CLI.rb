@@ -8,8 +8,8 @@ class TicTacToe_CLI
     start
   end # initialize
 
-
-  def intro_logo
+  ## Prints logo
+  def print_logo
     puts "   ____________     ____________     ____________   "
     puts "  |____    ____|   |____    ____|   |____    ____|  "
     puts "       |  |             |  |             |  |       "
