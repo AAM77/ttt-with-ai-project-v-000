@@ -78,6 +78,7 @@ class TicTacToe_CLI
 
       case input
       when 'y', 'yes'
+        true
 
       if input == 'y' || input == 'yes'
         true
