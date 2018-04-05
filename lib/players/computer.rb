@@ -94,7 +94,6 @@ module Players
 
     def prevent_defeat(board)
       self.token == 'X' ? opponent_token == 'O': opponent_token == 'X'
-      end # if token == 'X' or 'O'
 
       potential_combos(board, opponent_token)
     end # prevent_loss
