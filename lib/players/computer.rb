@@ -182,6 +182,7 @@ module Players
       end # if checking all
     end # check_all
 
+
     def place_elsewhere(board)
       if board.valid_move?("1")
         "1"
@@ -200,7 +201,7 @@ module Players
       elsif board.valid_move?("2")
         "2"
       end # valid_move?
-      
+
     end # place_elsewhere
 
 
