@@ -132,8 +132,6 @@ module Players
     end # check_corners
 
   end # class Computer
-
-
 end # module Players
 
 =begin
