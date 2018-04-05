@@ -5,7 +5,7 @@ class TicTacToe_CLI
   ## Initializes with a logo and the
   def initialize
     print_logo
-    start
+    start_menu
   end # initialize
 
 
@@ -20,7 +20,7 @@ class TicTacToe_CLI
   end # intro_logo
 
 
-  def start
+  def start_menu_menu
 
     puts "                                                    "
     puts "               WELCOME TO TIC-TAC-TOE!              "
@@ -44,9 +44,9 @@ class TicTacToe_CLI
       abort("You Exited the Game")
     else
       puts "Invalid entry. The choices are 0, 1, 2, or exit!"
-      start
-    end # case start
-  end # start
+      start_menu
+    end # case start_menu
+  end # start_menu
 
 
   def play_again?
@@ -61,7 +61,7 @@ class TicTacToe_CLI
 
     case play_again
     when 'y', 'yes'
-      start
+      start_menu
     when 'n', 'no'
       abort("You Exited the Game")
     else
