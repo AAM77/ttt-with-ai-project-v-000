@@ -105,6 +105,7 @@ module Players
           end
         end
       end
+=end
 
       if !winning_combo.empty?
         final = winning_combo.detect { |combo_num| !board.taken?(combo_num + 1) } #+1 to adjust for user input offset
