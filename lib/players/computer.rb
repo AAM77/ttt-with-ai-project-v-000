@@ -102,6 +102,7 @@ module Players
 
     def prevent_defeat(board)
       potential_combos(board, opponent_token)
+    end # prevent_defeat
 
 
     def check_middle(board)
