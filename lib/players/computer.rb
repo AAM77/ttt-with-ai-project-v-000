@@ -6,6 +6,7 @@
 #### ---> Currently, the only way to do this has been to run ONLY the 'check_middle' and 'place_elsewhere' methods
 
 ## I will come back to this later on and get it to work the way it should
+## I will delete my comments at that time.
 
 
 require 'pry'
