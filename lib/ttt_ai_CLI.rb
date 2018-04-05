@@ -76,6 +76,8 @@ class TicTacToe_CLI
       puts "Type 'n' or 'no' for NO"
       input = gets.strip.downcase
 
+      case input
+
       if input == 'y' || input == 'yes'
         true
       elsif input == 'n' || input == 'no'
