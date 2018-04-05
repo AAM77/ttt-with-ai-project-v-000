@@ -90,7 +90,6 @@ module Players
   end # class Computer
 end # module Players
 
-=end
 
 =begin
     def check_all(board)
