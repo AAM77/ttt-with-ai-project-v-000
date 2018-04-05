@@ -92,7 +92,7 @@ module Players
 
 
 
-    def prevent_defeat(board)
+    def determine_opponent_token(board)
       if self.token == 'X'
         opponent_token == 'O'
         potential_combos(board, opponent_token)
