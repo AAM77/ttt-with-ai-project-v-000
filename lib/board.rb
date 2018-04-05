@@ -25,7 +25,7 @@ class Board
 
 
   def position(user_input)
-    cells[input.to_i - 1]
+    cells[user_input.to_i - 1]
   end # position
 
 
@@ -41,8 +41,8 @@ class Board
   end # turn_count
 
 
-  def taken?(position)
-    if position(position) == "X" || position(position) == "O"
+  def taken?(user_input)
+    if position(user_input) == "X" || position(user_input) == "O"
       true
     else
       false
