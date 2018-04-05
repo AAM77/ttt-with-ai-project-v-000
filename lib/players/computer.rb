@@ -183,8 +183,25 @@ module Players
     end # check_all
 
     def place_elsewhere(board)
-      
-      
+    if board.valid_move?("1")
+      "1"
+    elsif board.valid_move?("3")
+      "3"
+    elsif board.valid_move?("7")
+      "7"
+    elsif board.valid_move?("9")
+      "9"
+    elsif board.valid_move?("6")
+      "6"
+    elsif board.valid_move?("4")
+      "4"
+    elsif board.valid_move?("8")
+      "8"
+    elsif board.valid_move?("2")
+      "2"
+    end
+
+
 
   end # class Computer
 end # module Players
