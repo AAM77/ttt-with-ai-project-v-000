@@ -68,7 +68,7 @@ class Game
     true if board.full? && !won?
   end # draw?
 
-
+  
   def winner
     if winning_combination = won?
       board.cells[winning_combination.first] ## returns the first player token of the winning combination
