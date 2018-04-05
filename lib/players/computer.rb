@@ -110,9 +110,9 @@ module Players
 
         if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]] &&
           combination[2] + 1
-        elsif board.cells[combination[0]] == board.cells[combination[2]]
+        elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
           combination[1] + 1
-        elsif board.cells[combination[1]] == board.cells[combination[2]]
+        elsif board.cells[combination[1]] == player_token && board.cells[combination[0]] == board.cells[combination[2]] 
           [combination[0] + 1
         end # if combination.index
       end # WIN_COMBINATIONS.detect
