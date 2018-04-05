@@ -1,5 +1,7 @@
 ## This is not working right, but I need to work on something else.
 ## For some reason, it will not detect the winning combination
+## Need to reduce repeition
+## Need to add in a function that places at random
 ## I will come back to this later on and get it to work the way it should
 
 
