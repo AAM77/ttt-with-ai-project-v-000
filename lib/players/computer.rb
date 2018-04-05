@@ -105,7 +105,11 @@ module Players
     end # opponent_token
 
     def prevent_defeat(board)
-      position = potential_combos(board, opponent_token)
+      index = potential_combos(board, self.token)
+      position = (index + 1).to_s
+      if valid_move?(position)
+        position
+      end # if valid_move?
     end # prevent_defeat
 
 
