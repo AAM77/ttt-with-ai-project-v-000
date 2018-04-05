@@ -30,6 +30,7 @@ class Game
     @board = board
   end # initialize
 
+
   ## determines whose turn it is
   def current_player
     if board.turn_count.even?
@@ -46,7 +47,6 @@ class Game
       true
     end # over?
   end # over?
-
 
 
   ## determines the the winning combination that matches
