@@ -11,7 +11,7 @@ module Players
 
       position ||= go_for_victory(board)
       position ||= prevent_defear(board)
-      position ||= 
+      position ||= check_middle(board)
       position ||= check_corners(board)
       position ||= check_all(board)
 
