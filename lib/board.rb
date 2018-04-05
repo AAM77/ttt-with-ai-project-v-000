@@ -50,8 +50,8 @@ class Board
   end # taken?
 
 
-  def valid_move?(position)
-    index = position.to_i - 1
+  def valid_move?(user_input)
+    index = user_input.to_i - 1
     true if (0 <= index && index <= 8) && taken?(position) == false
   end # valid_move?
 
