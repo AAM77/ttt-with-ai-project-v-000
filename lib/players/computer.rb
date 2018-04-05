@@ -109,9 +109,9 @@ module Players
       Game::WIN_COMBINATIONS.detect do |combination|
 
         if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]] &&
-          board.cells[combination[0]].index
+          board.cells[combination[2]].index + 1
         elsif board.cells[combination[0]] == board.cells[combination[2]]
-          @move = "2"
+          board.cells[combination[1]].index + 1
         elsif board.cells[combination[1]] == board.cells[combination[2]]
           @move = "1"
         end # if combination.index
