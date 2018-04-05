@@ -66,9 +66,7 @@ class Game
 
 
   def draw?
-    if board.full? && !won?
-      true
-    end # if
+    true if board.full? && !won?
   end # draw?
 
 
