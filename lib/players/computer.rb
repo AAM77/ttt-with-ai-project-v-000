@@ -87,7 +87,8 @@ module Players
             combination[0] + 1
           end # if taken?
         end # outer if
-      end # detect_winning_move
+      end # do |combination|
+    end # detect_winning_move
 
 =begin
       winning_combo = []
