@@ -199,7 +199,8 @@ module Players
         "8"
       elsif board.valid_move?("2")
         "2"
-      end
+      end # valid_move?
+      
 
 
 
