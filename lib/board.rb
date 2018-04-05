@@ -43,10 +43,6 @@ class Board
 
   def taken?(user_input)
     position(user_input) == "X" || position(user_input) == "O" ? true : false
-      true
-    else
-      false
-    end # if
   end # taken?
 
 
