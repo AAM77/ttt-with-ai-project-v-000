@@ -118,9 +118,11 @@ module Players
       end # WIN_COMBINATIONS.detect
     end # potential_combos
 
-    def go_for_win(board)
+    def go_for_victory(board)
       potential_combos(board, self.token)
     end # go_for_win
+
+    def prevent_defeat(board)
 
 
     def check_corners(board)
