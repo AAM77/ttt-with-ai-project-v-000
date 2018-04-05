@@ -1,4 +1,4 @@
-## This is not working right, but I need to work on something else.
+## This is not working right, but I need to work on something else for sometime.
 ## For some reason, it will not detect the winning combination
 ## Need to reduce repeition
 ## Need to add in a method that places at random.
