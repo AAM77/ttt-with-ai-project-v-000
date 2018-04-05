@@ -33,6 +33,7 @@ class TicTacToe_CLI
       case user_input
       when '0'
         zero_players
+        play_again?
       when '1'
         one_player
         play_again?
