@@ -90,22 +90,22 @@ class TicTacToe_CLI
   end # go_first
 
 
-    ## The computer plays itself
-    def zero_players
-      game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+  ## The computer plays itself
+  def zero_players
+    game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
 
-      puts "To have the computer play itself 100 times, type 'wargames'."
-      puts "Type anything else to have it play itself only once"
-      user_input = gets.strip
+    puts "To have the computer play itself 100 times, type 'wargames'."
+    puts "Type anything else to have it play itself only once"
+    user_input = gets.strip
 
-      if user_input.downcase == "wargames"
-        100.times{game.play}
-      else
-        until game.over?
-          game.play
-        end # until over?
-      end # if wargames
-    end # zero_players
+    if user_input.downcase == "wargames"
+      100.times{game.play}
+    else
+      until game.over?
+        game.play
+      end # until over?
+    end # if wargames
+  end # zero_players
 
 
     ## The player's opponent is a computer
