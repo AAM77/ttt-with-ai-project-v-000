@@ -13,7 +13,6 @@ module Players
       position ||= prevent_defear(board)
       position ||= check_middle(board)
       position ||= check_corners(board)
-      position ||= check_all(board)
 
       position.to_s
 
