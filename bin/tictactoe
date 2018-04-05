@@ -2,5 +2,5 @@
 
 require_relative '../config/environment'
 
-## Starts a new session of the CLI and runs the methods in #initialize
+## Starts a new session of the CLI and runs the methods in TicTacToe_CLI #initialize
 TicTacToe_CLI.new
