@@ -81,6 +81,8 @@ class TicTacToe_CLI
         true
       when 'n', 'no'
         false
+      else
+        go_first?
 
       if input == 'y' || input == 'yes'
         true
