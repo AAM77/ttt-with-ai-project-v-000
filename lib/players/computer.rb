@@ -70,6 +70,40 @@ module Players
     ## preventing opponent from winning
     ## I need to
 
+
+    def potential_combos(board, player_token)
+
+      Game::WIN_COMBINATIONS.detect do |combination|
+
+        if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]]
+          combination[2] + 1
+        elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
+          combination[1] + 1
+        elsif board.cells[combination[1]] == player_token && board.cells[combination[1]] == board.cells[combination[2]]
+          [combination[0] + 1
+        end # if combination index == token
+      end # WIN_COMBINATIONS.detect
+    end # potential_combos
+
+
+
+    def go_for_victory(board)
+      potential_combos(board, self.token)
+    end # go_for_win
+
+
+
+    def prevent_defeat(board)
+      if self.token == 'X'
+        opponent_token == 'O'
+      else
+        opponent_token == 'X'
+      end # if token == 'X' or 'O'
+
+      potential_combos(board, opponent_token)
+    end # prevent_loss
+
+
     def check_middle(board)
       value = rand(1..8)
       if !board.taken?("5")
@@ -102,35 +136,6 @@ module Players
         "2"
       end # if
     end # check_middle
-
-
-    def potential_combos(board, player_token)
-
-      Game::WIN_COMBINATIONS.detect do |combination|
-
-        if board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[1]]
-          combination[2] + 1
-        elsif board.cells[combination[0]] == player_token && board.cells[combination[0]] == board.cells[combination[2]]
-          combination[1] + 1
-        elsif board.cells[combination[1]] == player_token && board.cells[combination[1]] == board.cells[combination[2]]
-          [combination[0] + 1
-        end # if combination index == token
-      end # WIN_COMBINATIONS.detect
-    end # potential_combos
-
-    def go_for_victory(board)
-      potential_combos(board, self.token)
-    end # go_for_win
-
-    def prevent_defeat(board)
-      if self.token == 'X'
-        opponent_token == 'O'
-      else
-        opponent_token == 'X'
-      end # if token == 'X' or 'O'
-
-      potential_combos(board, opponent_token)
-    end # prevent_loss
 
 
     def check_corners(board)
