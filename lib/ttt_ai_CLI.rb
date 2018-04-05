@@ -114,7 +114,7 @@ class TicTacToe_CLI
   end # zero_players
 
 
-  ## The player's opponent is a computer
+  ## The human player's opponent is a computer
   def one_player
 
     if go_first? == true
