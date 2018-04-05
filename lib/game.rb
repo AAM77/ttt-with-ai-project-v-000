@@ -79,8 +79,8 @@ class Game
 
   ## recursively call this function until it received a valid entry
   def turn
-    player = current_player
-    puts "Player #{player.token}'s turn!'"
+
+    puts "Player #{current_player.token}'s turn!'"
     puts "\n"
     user_input = current_player.move(board)
 
@@ -89,7 +89,7 @@ class Game
       board.display
       turn
     else
-      board.update(user_input, player)
+      board.update(user_input, current_player)
       board.display
     end # if valid_move?
 
